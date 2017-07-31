@@ -1,5 +1,5 @@
 CXX       = gcc
-CXXFLAGS  = -Wall -I. -Winline -I../../include/ -O0  -fopenmp # -O3
+CXXFLAGS  = -Wall -I. -Winline -I../../include/ -O0  -fopenmp  #-O3
 LDFLAGS =  ../../lib/libpad.a
 
 PROGRAM   = app
