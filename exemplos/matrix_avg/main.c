@@ -126,30 +126,30 @@ int main(int argc, char **argv) {
     start_time = micros_since_epoch();
     calc1(in, out);
     end_time = micros_since_epoch();
-    printf("Elapsed time : %2.6f ms (basic)\n", (end_time-start_time)/1000.);
+    printf("Elapsed time: %4.6f ms (basic)\n", (end_time-start_time)/1000.);
 
 
     start_time = micros_since_epoch();
     calc2(in, out);
     end_time = micros_since_epoch();
-    printf("Elapsed time: %2.6f ms (cache)\n", (end_time-start_time)/1000.);
+    printf("Elapsed time: %4.6f ms (cache)\n", (end_time-start_time)/1000.);
     
     
     start_time = micros_since_epoch();
     calc3(in, out);
     end_time = micros_since_epoch();
-    printf("Elapsed time: %2.6f ms (loop unrolling)\n", (end_time-start_time)/1000.);
+    printf("Elapsed time: %4.6f ms (loop unrolling)\n", (end_time-start_time)/1000.);
     
     start_time = micros_since_epoch();
     calc4(in, out);
     end_time = micros_since_epoch();
-    printf("Elapsed time: %2.6f ms (openmp ol)\n", (end_time-start_time)/1000.);
+    printf("Elapsed time: %4.6f ms (openmp ol)\n", (end_time-start_time)/1000.);
 
     
     start_time = micros_since_epoch();
     calc5(in, out);
     end_time = micros_since_epoch();
-    printf("Elapsed time: %2.6f ms (openmp il)\n", (end_time-start_time)/1000.);
+    printf("Elapsed time: %4.6f ms (openmp il)\n", (end_time-start_time)/1000.);
 
     return 0;
 }
